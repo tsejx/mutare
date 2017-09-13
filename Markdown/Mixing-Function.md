@@ -5,8 +5,8 @@ Tags： FunctionPackage
 ---
 ## 数组首尾增减函数
 
-```
-// 封装一个函数pop删除数组的最后一位，并且返回这个被删除的元素
+**封装一个函数pop删除数组的最后一位，并且返回这个被删除的元素**
+```javascript
 function pop(arr){
   if(!arr.length) return;
   var ret = arr[arr.length - 1];
@@ -14,15 +14,17 @@ function pop(arr){
   return ret;
 }
 ```
-```
-// 封装一个函数push向数组的最后一位添加新的元素，并且返回添加元素之后数组的长度
+
+**封装一个函数push向数组的最后一位添加新的元素，并且返回添加元素之后数组的长度**
+```javascript
 function push(arr, ele){
   arr[arr.length] = ele;
   return arr.length;
 }
 ```
-```
-// 封装一个函数shift删除数组的第一个元素，并且返回这个被删除的元素
+
+**封装一个函数shift删除数组的第一个元素，并且返回这个被删除的元素**
+```javascript
 function shift(arr){
   if(!arr.length) return;
   var ret = arr[0];
@@ -33,8 +35,9 @@ function shift(arr){
   return ret;
 }
 ```
-```
-// 封装一个函数unshift向数组最前面添加一个元素，并且返回新数组的长度
+
+**封装一个函数unshift向数组最前面添加一个元素，并且返回新数组的长度**
+```javascript
 function unshift(arr, ele){
   for(var i=arr.length; i>=0; i--){
     arr[i] = arr[i-1];
@@ -48,7 +51,7 @@ function unshift(arr, ele){
 ## 驼峰转换函数
 封装一个函数，将字符串"miao-wei-ke-tang"从第二个单词开始首字母大写，然后拼成字符串miaoWeiKeTang，并返回。
 
-```
+```javascript
 var str = `miao-wei-ke-tang`;
 var arr = str.split('-');
 
@@ -58,9 +61,12 @@ for(var i = 1;i < arr.length;i++){
 
 console.log(arr.join('-'));
 ```
+
 ## 去除空格函数
+
 封装一个函数，将字符串"      miao  v        "实现trim功能，但不使用trim方法，去掉字符串前后空格，将返回处理后的字符串。
-```
+
+```javascript
 var str = `      miao  v        `;
 
 function trim(str){
@@ -78,9 +84,12 @@ function trim(str){
 
 console.log(trim(str));
 ```
+
 ## 找位置函数
+
 写一个方法，找出字符串 “abcabcabcabcabcabda” 中”ab”出现的次数和位置；
-```
+
+```javascript
 var str =`abcabcabcabcabcabc`;
 
 var n =0,index, x = 0;
