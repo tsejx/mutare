@@ -13,7 +13,18 @@
 
 <summary>View contents</summary>
 
-- 
+- `ary`
+- `call`
+- `collectInto`
+- `flip`
+- `over`
+- `overArgs`
+- `pipeAsyncFunctions`
+- `pipeFunctions`
+- `promisify`
+- `rearg`
+- `spreadOver`
+- `unary`
 
 </details>
 
