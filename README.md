@@ -1,4 +1,4 @@
-![Logo](/Imges/JavaScriptToolkitLogo.jpg)
+![Logo](./Images/JavaScriptToolkitLogo.jpg)
 
 # JavaScript Toolkit
 
@@ -13,18 +13,7 @@
 
 <summary>View contents</summary>
 
-- `ary`
-- `call`
-- `collectInto`
-- `flip`
-- `over`
-- `overArgs`
-- `pipeAsyncFunctions`
-- `pipeFunctions`
-- `promisify`
-- `rearg`
-- `spreadOver`
-- `unary`
+
 
 </details>
 
