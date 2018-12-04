@@ -1,3 +1,10 @@
+/*
+ * @Author: tsejx 
+ * @Date: 2018-12-02 14:41:24 
+ * @Last Modified by: tsejx 
+ * @Last Modified time: 2018-12-02 14:41:24 
+ */
+
 const cookie = {
   set(name, value, expires, domain, path, sercure){
     let cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);

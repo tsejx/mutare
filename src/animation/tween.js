@@ -5,11 +5,7 @@
 * d : duration 持续时间
 *
 * 曲线方程
-*
-* http://www.cnblogs.com/bluedream2009/archive/2010/06/19/1760909.html
 * */
-
-//Tween.linear();
 
 var Tween = {
 	linear: function (t, b, c, d){  //匀速
@@ -140,3 +136,5 @@ var Tween = {
 		return Tween['bounceOut'](t*2-d, 0, c, d) * 0.5 + c*0.5 + b;
 	}
 }
+
+export default Tween

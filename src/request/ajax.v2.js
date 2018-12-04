@@ -8,8 +8,7 @@
 * @param async 可选，同步，默认同步执行（true）
 * @param callback 可选，function回调函数
 * @param dataType 可选，预期返回的数据类型，默认为text
-* @param jsonp 可选，jsonp回调参数，默认为"jsonp"用于服务器端接收，
-*				如jsonp:"callback"，php端输出echo $_GET['callback']."(这里是要输出的数据)"
+* @param jsonp 可选，jsonp回调参数，默认为"jsonp"用于服务器端接收，如jsonp:"callback"，php端输出echo $_GET['callback']."(这里是要输出的数据)"
 */
 var ajax = function(){
 	var GLOBAL = {};
@@ -138,8 +137,5 @@ var ajax = function(){
 				GLOBAL.callback(data);
 			}
 		}
-
-
 	}
-
 }();
