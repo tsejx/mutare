@@ -1,8 +1,8 @@
 /*
  * @Author: tsejx 
  * @Date: 2018-12-01 12:26:33 
- * @Last Modified by:   tsejx 
- * @Last Modified time: 2018-12-01 12:26:33 
+ * @Last Modified by: tsejx
+ * @Last Modified time: 2018-12-08 22:09:51
  */
 
 /**
@@ -50,4 +50,31 @@ function accMul(arg1, arg2) {
       .replace(/(零.)*零元/, '元')
       .replace(/(零.)+/g, '零')
       .replace(/^整$/, '零元整');
+  }
+
+  /**
+   * 随机生成范围内整数
+   * @param {number} min 最小值
+   * @param {number} max 最大值
+   */
+  const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min)
+
+  /**
+   * 浮点精度修复函数
+   * 适用于保留两位浮点数的金额字符串,在不丢失精度的前提下从以元为单位转换为以分为单位
+   * @param {string} n 
+   */
+  const fixFloatPointAccuracy = (n) => {
+    if (typeof n !== 'string') {
+      throw Error('n must be string')
+    }
+    if (n.indexOf('.') > -1){
+      const a = n.split('.')
+      if (a[1].length > 2){
+        throw Error('float point cant more than two')
+      }
+      const i = a[0] * 100
+      const f = a[1].length === 1 ? a[1] * 10 : a[1]
+      return Number(i) + Number(f)
+    }
   }
