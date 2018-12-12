@@ -2,7 +2,7 @@
  * @Author: tsejx 
  * @Date: 2018-12-01 12:29:20 
  * @Last Modified by: tsejx
- * @Last Modified time: 2018-12-02 14:13:42
+ * @Last Modified time: 2018-12-12 21:27:00
  */
 
 // 使用 Object.prototype.toString 有可能会被重写
@@ -68,3 +68,11 @@ const isArray = v => Array.isArray.bind(v)
 // TODO:isInteger
 
 // TODO:isNaN
+
+/**
+ * HTMLElement检测函数
+ * @param {any} node 检测是否HTMLElement的DOM节点
+ */
+function isHTMLElement(node) {
+    return typeof node === 'object' && node !== null && node.nodeType && node.nodeName;
+  }
