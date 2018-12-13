@@ -2,7 +2,7 @@
  * @Author: tsejx 
  * @Date: 2018-12-01 12:28:58 
  * @Last Modified by: tsejx
- * @Last Modified time: 2018-12-04 16:55:58
+ * @Last Modified time: 2018-12-07 11:46:26
  */
 
  /**
@@ -78,3 +78,27 @@ const difference = (a, b) => Array.fron(new Set([...a].filter(x => !b.has(x))))
 
 // ES7+
 const differenceES7 = (a, b) => a.concat(b).filter(v => a.includes(v) && !b.includes(v))
+
+/**
+ * 查询对象数组是否存在相同的对应键
+ * @param {array} a 对象数组
+ * @param {string} k 查询的键名
+ * @param {any} v 查询的键值
+ * @returns {object|undefined} 当查询成功后返回第一个对象
+ */
+const queryArrayObjects = (a, k, v) => {
+    if (!Array.isArray(a)) return
+    return a.filter(i => i[k] === v)
+}
+
+/**
+ * 删除数组某项元素
+ * @param {array} a 数组
+ * @param {numbet} i 删除元素的索引
+ * @returns {array} 删除元素后新数组
+ */
+const deleteIndex = (a, i) => {
+    let r = a.slice(i + 1)
+    arr.splice(i, a.length)
+    return a.concat(r)
+}
