@@ -2,7 +2,7 @@
  * @Author: tsejx 
  * @Date: 2018-12-01 12:29:20 
  * @Last Modified by: tsejx
- * @Last Modified time: 2018-12-12 21:27:00
+ * @Last Modified time: 2018-12-16 23:41:14
  */
 
 // 使用 Object.prototype.toString 有可能会被重写
@@ -63,7 +63,7 @@ const isFunction = v => typeof v === 'function'
  * @param {*} v 检测对象
  * @returns {boolean} 如果检测对象是数组则返回true，否则返回false
  */
-const isArray = v => Array.isArray.bind(v)
+const isArray = v => Array.isArray(v)
 
 // TODO:isInteger
 
@@ -73,6 +73,4 @@ const isArray = v => Array.isArray.bind(v)
  * HTMLElement检测函数
  * @param {any} node 检测是否HTMLElement的DOM节点
  */
-function isHTMLElement(node) {
-    return typeof node === 'object' && node !== null && node.nodeType && node.nodeName;
-  }
+const isHTMLElement = node => typeof node === 'object' && node !== null && node.nodeType && node.nodeName;
