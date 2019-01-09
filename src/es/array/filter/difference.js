@@ -2,7 +2,7 @@
  * @Author: tsejx 
  * @Date: 2018-12-15 15:39:24 
  * @Last Modified by: tsejx
- * @Last Modified time: 2018-12-15 20:19:30
+ * @Last Modified time: 2018-12-16 01:59:38
  */
 
 /**
@@ -24,3 +24,4 @@ const difference = (a, b) => [...new Set(a.filter(x => !(new Set(b).has(x))))]
 const difference = (a, b) => a.concat(b).filter(v => a.includes(v) && !b.includes(v))
 
 // TODO: 对象数组按指定值去重实现
+// const differenceIn = (a, b, k) => a.filter(v => v.k === b.find(t => t.k ))
