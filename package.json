@@ -1,0 +1,43 @@
+{
+  "author": "tsejx <tsejx@foxmail.com>",
+  "name": "mutare",
+  "version": "0.1.0",
+  "description": "Some parctical utilities for JavaScript Developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register ./src/*/__tests__/*.test.js --recursive",
+    "lint": "eslint --ext .js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsejx/mutare.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "JS",
+    "js",
+    "toolkit",
+    "function",
+    "utils",
+    "package",
+    "mutare"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsejx/mutare/issues"
+  },
+  "homepage": "https://github.com/tsejx/mutare#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.12.0",
+    "eslint-plugin-import": "^2.15.0",
+    "mocha": "^5.2.0",
+    "rollup": "^1.1.0"
+  },
+  "dependencies": {}
+}
