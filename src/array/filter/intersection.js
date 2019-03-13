@@ -8,9 +8,13 @@
  * intersection([1, 2, 3, 4, 5], [2, 4])
  * // => [2, 4]
  */
-const intersection = (a, b) => [...new Set(a.filter(x => new Set(b).has(x)))];
+function intersection(a, b) {
+    return [...new Set(a.filter(x => new Set(b).has(x)))];
+}
 
 // ES7+
-const intersectionES7 = (a, b) => a.filter(v => b.includes(v));
+function intersectionES7(a, b) {
+    return a.filter(v => b.includes(v));
+}
 
 export { intersection, intersectionES7 };
