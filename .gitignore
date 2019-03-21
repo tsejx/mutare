@@ -2,7 +2,7 @@
 .vscode/
 *.log
 node_modules
-dist
-lib
-es
+dist/
+lib/
+es/
 coverage
