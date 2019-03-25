@@ -2,14 +2,26 @@
     <img width="200" src="https://raw.githubusercontent.com/tsejx/mutare/master/images/logo.png">
 </div>
 
-<h1 align="center">Matare</h1>
+<h1 align="center">Mutare</h1>
 
 <p align="center">mutare 取名自拉丁语：变化</p>
 
-* 动画
+[![NPM Version](https://img.shields.io/npm/v/mutare.svg)](https://www.npmjs.com/package/mutare) [![NPM Download](https://img.shields.io/npm/dm/mutare.svg)](https://www.npmjs.com/package/mutare) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![LICENSE](https://img.shields.io/npm/l/mutare.svg)](https://github.com/tsejx/mutare/blob/master/LICENSE)
+
+## Installation 安裝
+
+```bash
+$ npm install mutare --save
+
+$ yarn add mutare
+```
+
+## Catalog 目录
+
+* Animation
     * `animate`
-    * `shake`
-* 数组
+    * `shake` 抖动函数
+* Array
     * 遍历
         * `bifurcate` 通过映射关系分离数组成员
         * `chunk` 按指定成员数量分离数组
@@ -31,10 +43,10 @@
     * `getCookie`
     * `rmCookie`
     * `setCookie`
-* 日期
+* Date
 * Debug
     * `warning`
-* 设备
+* Device
     * `getBrowser` 获取浏览器类型
     * `getOS` 获取操作系统类型
 * DOM
@@ -43,13 +55,13 @@
     * `html`
     * `selector`
     * `val`
-* 函数
+* Function
     * `argToArray`
     * `isAllFunction`
     * `mixBindWithApply`
-* 指纹
+* Hash
     * `guid`
-* 数学
+* Math
     * `accAdd`
     * `accDiv`
     * `accMul`
@@ -62,18 +74,18 @@
     * `formatDigit`
     * `randomRange`
     * `uppercaseMoney`
-* 模块
+* Module
     * `getModuleName`
-* 对象
+* Object
     * `getPrototypeOf`
     * `isPlainObject`
-* 正则表达式
-* 数据请求
+* Regexp
+* Request
     * `request`
-* 字符串
+* String
 * URL
     * `parseQuery`
-* 验证
+* Validation
     * `isAlpha`
     * `isBlank`
     * `isBoolean`
