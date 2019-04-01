@@ -12,3 +12,5 @@ export * from './src/isPositiveDecimal';
 export * from './src/isString';
 export * from './src/isSymbol';
 export * from './src/isUndefined';
+export * from './src/isEmptyObject';
+export * from './src/isPlainObject';
