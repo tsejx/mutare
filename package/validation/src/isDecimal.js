@@ -4,5 +4,5 @@
  * @return
  */
 export function isDecimal(value) {
-    return /^[-+]?(?:0|[1-9]\d*)\.\d+$/.test(value);
+  return /^[-+]?(?:0|[1-9]\d*)\.\d+$/.test(value);
 }

@@ -4,8 +4,8 @@
  * @param {*} val html值
  */
 export function html(ele, val) {
-    if (typeof val === 'undefined') {
-        return ele.innerHTML;
-    }
-    ele.innerHTML = val;
+  if (typeof val === 'undefined') {
+    return ele.innerHTML;
+  }
+  ele.innerHTML = val;
 }

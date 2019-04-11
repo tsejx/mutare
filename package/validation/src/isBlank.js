@@ -1,3 +1,3 @@
 export function isBlank(obj) {
-    return obj === undefined || obj === null;
+  return obj === undefined || obj === null;
 }

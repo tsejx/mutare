@@ -1,1 +1,1 @@
-export * from './src/warning'
+export * from './src/warning';

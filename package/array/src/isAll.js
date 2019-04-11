@@ -4,8 +4,8 @@
  * @param {function} fn 检测器
  */
 
-function isAll(arr, fn = Boolean){
-    return arr.every(fn);
+function isAll(arr, fn = Boolean) {
+  return arr.every(fn);
 }
 
-export default isAll
+export default isAll;

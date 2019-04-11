@@ -11,5 +11,5 @@
  * // => [undefined, '', null]
  */
 export function dedupe(arr) {
-    return [...new Set(arr)];
+  return [...new Set(arr)];
 }

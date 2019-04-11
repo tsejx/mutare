@@ -12,11 +12,10 @@
  * chunk([{a: 'a'}, {b: 'b'}, {c: 'c'}, {d: 'd'}, {e: 'e'}], 3)
  * // => [[{a: 'a'}, {b: 'b'}, {c: 'c'}], [{d: 'd'}, {e: 'e'}]]
  */
-function chunk(arr, size){
-    return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
-        arr.slice(i * size, i * size + size)
-    );
+function chunk(arr, size) {
+  return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+    arr.slice(i * size, i * size + size),
+  );
 }
 
-
-export default chunk
+export default chunk;

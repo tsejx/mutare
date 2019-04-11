@@ -4,5 +4,5 @@
  * @returns {boolean} 如果检测对象是number类型则返回true，否则返回false
  */
 export function isNumber(v) {
-    return typeof v === 'number';
+  return typeof v === 'number';
 }

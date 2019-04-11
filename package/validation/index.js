@@ -14,3 +14,4 @@ export * from './src/isSymbol';
 export * from './src/isUndefined';
 export * from './src/isEmptyObject';
 export * from './src/isPlainObject';
+export * from './src/isArray';

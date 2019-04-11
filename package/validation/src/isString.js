@@ -4,5 +4,5 @@
  * @returns {boolean} 如果检测对象是string类型则返回true，否则返回false
  */
 export function isString(v) {
-    return typeof v === 'string';
+  return typeof v === 'string';
 }

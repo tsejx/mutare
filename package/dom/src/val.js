@@ -4,8 +4,8 @@
  * @param {*} value
  */
 export function val(ele, value) {
-    if (typeof value === 'undefined') {
-        return ele.value;
-    }
-    ele.value = value;
+  if (typeof value === 'undefined') {
+    return ele.value;
+  }
+  ele.value = value;
 }

@@ -8,18 +8,18 @@
  * @param {*} sercure
  */
 export function setCookie(name, value, expires, domain, path, sercure) {
-    let cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
-    if (expires instanceof Date) {
-        cookie += '; expires=' + expires;
-    }
-    // if (domain) {
-    //     cookie += '; domain=' + domain;
-    // }
-    // if (path) {
-    //     cookie += '; path=' + path;
-    // }
-    if (sercure) {
-        cookie += '; sercure';
-    }
-    document.cookie = cookie;
+  let cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+  if (expires instanceof Date) {
+    cookie += '; expires=' + expires;
+  }
+  // if (domain) {
+  //     cookie += '; domain=' + domain;
+  // }
+  // if (path) {
+  //     cookie += '; path=' + path;
+  // }
+  if (sercure) {
+    cookie += '; sercure';
+  }
+  document.cookie = cookie;
 }

@@ -1,1 +1,1 @@
-export * from './src/parseQuery';
+export * from './src/queryParse';

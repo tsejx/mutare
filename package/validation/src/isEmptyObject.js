@@ -3,5 +3,5 @@
  * @param {obj} obj 检测对象
  */
 export function isEmptyObject(obj) {
-    return Object.keys(obj).length === 0;
+  return Object.keys(obj).length === 0;
 }

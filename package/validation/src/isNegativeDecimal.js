@@ -3,6 +3,6 @@
  * @param  {any} value
  * @return
  */
-export function isNegativeDecimal(value){
-    return /^\-?(?:0|[1-9]\d*)\.\d+$/.test(value);
+export function isNegativeDecimal(value) {
+  return /^\-?(?:0|[1-9]\d*)\.\d+$/.test(value);
 }

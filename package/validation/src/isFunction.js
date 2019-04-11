@@ -4,5 +4,5 @@
  * @returns {boolean} 如果检测对象是函数则返回true，否则返回false
  */
 export function isFunction(v) {
-    return typeof v === 'function';
+  return typeof v === 'function';
 }

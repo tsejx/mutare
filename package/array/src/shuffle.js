@@ -11,14 +11,14 @@
  * // =>[{a: 1}, {d: 4}, {e: 5}, {c: 3}, {b: 2}]
  */
 function shuffle(a) {
-    var m = a.length,
-        t,
-        i;
-    while (m) {
-        i = Math.floor(Math.random() * m--);
-        [a[m], a[i]] = [a[i], a[m]];
-    }
-    return a;
+  var m = a.length,
+    t,
+    i;
+  while (m) {
+    i = Math.floor(Math.random() * m--);
+    [a[m], a[i]] = [a[i], a[m]];
+  }
+  return a;
 }
 
 export default shuffle;

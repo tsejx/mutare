@@ -5,5 +5,5 @@ import { isFunction } from '../../validation';
  * @param {any} obj 检测对象
  */
 export function isAllFunction(obj) {
-    return Object.keys(obj).every(key => isFunction(obj[key]));
+  return Object.keys(obj).every(key => isFunction(obj[key]));
 }

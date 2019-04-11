@@ -4,5 +4,5 @@
  * @return
  */
 export function isAlpha(value) {
-    return /^[a-z]$/i.test(value);
+  return /^[a-z]$/i.test(value);
 }

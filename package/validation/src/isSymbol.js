@@ -4,5 +4,5 @@
  * @returns {boolean} 如果检测对象是symbol类型则返回true，否则返回false
  */
 export function isSymbol(s) {
-    return typeof s === 'symbol';
+  return typeof s === 'symbol';
 }

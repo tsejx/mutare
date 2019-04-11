@@ -1,5 +1,5 @@
-import { accAdd } from './accAdd'
-import { accMul } from './accMul'
+import { accAdd } from './accAdd';
+import { accMul } from './accMul';
 
 /**
  * 格式化数值（金额数值）并并可指定保留小数个数
@@ -10,19 +10,19 @@ import { accMul } from './accMul'
  * TODO: 设定参数决定末尾保留小数是否进行四舍五入操作
  */
 export function formatDecimals(num, decimals, toFixed = true) {
-    if (isNaN(num)) num = '0';
+  if (isNaN(num)) num = '0';
 
-    num = num.toString().replace(/\$|\¥|\,/g, '');
+  num = num.toString().replace(/\$|\¥|\,/g, '');
 
-    decimals = decimals > 0 && decimals <= 10 ? decimals : 2;
+  decimals = decimals > 0 && decimals <= 10 ? decimals : 2;
 
-    var sign = num == (num = Math.abs(num));
+  var sign = num == (num = Math.abs(num));
 
-    num = Math.floor(accAdd(accMul(num, Math.pow(10, decimals)), 0.50000000001));
+  num = Math.floor(accAdd(accMul(num, Math.pow(10, decimals)), 0.50000000001));
 
-    var interger = Math.floor(num / Math.pow(10, decimals)).toString()
+  var interger = Math.floor(num / Math.pow(10, decimals)).toString();
 
-    var cents = String(num).substr(String(num).length - decimals)
+  var cents = String(num).substr(String(num).length - decimals);
 
-    return (sign ? '' : '-') + interger + '.' + cents;
+  return (sign ? '' : '-') + interger + '.' + cents;
 }

@@ -14,8 +14,8 @@
  * // => [[1, 2, 3, 4, 5]]
  */
 function findIn(a, k, v) {
-    if (!Array.isArray(a)) return;
-    return a.filter(i => i[k] === v);
+  if (!Array.isArray(a)) return;
+  return a.filter(i => i[k] === v);
 }
 
 export default findIn;

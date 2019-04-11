@@ -3,5 +3,5 @@
  * @param {*} arg 函数参数集合
  */
 export function argToArray(arg) {
-    return Object.prototype.slice.call(arg);
+  return Object.prototype.slice.call(arg);
 }

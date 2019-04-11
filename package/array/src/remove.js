@@ -13,7 +13,7 @@
  */
 
 export function rmArrItem(a, i) {
-    let r = a.slice(i + 1);
-    a.splice(i, a.length);
-    return a.concat(r);
+  let r = a.slice(i + 1);
+  a.splice(i, a.length);
+  return a.concat(r);
 }

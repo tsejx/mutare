@@ -4,5 +4,5 @@
  * @returns {boolean} 如果检测对象是null类型则返回true，否则返回false
  */
 export function isNull(v) {
-    return v === null;
+  return v === null;
 }

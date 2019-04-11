@@ -9,5 +9,5 @@
  * // => [1, 2, 3, 4, 5]
  */
 export function union(a, b) {
-    return [...new Set([...a, ...b])];
+  return [...new Set([...a, ...b])];
 }
