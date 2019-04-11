@@ -11,10 +11,11 @@
   ],
   "scripts": {
     "clean": "rimraf ./lib ./es ./dist",
-    "test": "mocha --require @babel/register ./src/*/__tests__/*.test.js --recursive",
+    "test": "mocha --require @babel/register ./package/*/__tests__/*.test.js --recursive",
     "lint": "eslint --ext .js src",
-    "build": "npm run clean && NODE_ENV=prod rollup -c",
-    "version": "git add CHANGELOG.MD"
+    "build": "npm run clean && NODE_ENV=prod rollup -c scripts/rollup.config.js",
+    "version": "git add CHANGELOG.MD",
+    "prettier": "node ./scripts/prettier.js"
   },
   "repository": {
     "type": "git",
@@ -42,9 +43,13 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
     "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
     "eslint": "^5.12.0",
     "eslint-plugin-import": "^2.15.0",
+    "glob": "^7.1.3",
     "mocha": "^5.2.0",
+    "prettier": "^1.16.4",
     "rimraf": "^2.6.3",
     "rollup": "^1.1.0",
     "rollup-plugin-babel": "^4.3.2",
