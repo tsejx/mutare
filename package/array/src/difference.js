@@ -11,14 +11,6 @@
  * difference([NaN, undefined, '', null], [NaN, '', ,])
  * // => [null]
  */
-function difference(a, b) {
+export function difference(a, b) {
     return [...new Set(a.filter(x => !new Set(b).has(x)))];
 }
-
-// 使用concat()方法合并后与原来两个数组筛选
-// const difference = (a, b) => a.concat(b).filter(v => a.includes(v) && !b.includes(v))
-
-// TODO: 对象数组按指定值去重实现
-// const differenceIn = (a, b, k) => a.filter(v => v.k === b.find(t => t.k ))
-
-export default difference;

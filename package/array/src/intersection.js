@@ -8,13 +8,6 @@
  * intersection([1, 2, 3, 4, 5], [2, 4])
  * // => [2, 4]
  */
-function intersection(a, b) {
+export function intersection(a, b) {
     return [...new Set(a.filter(x => new Set(b).has(x)))];
 }
-
-// ES7+
-function intersectionES7(a, b) {
-    return a.filter(v => b.includes(v));
-}
-
-export { intersection, intersectionES7 };

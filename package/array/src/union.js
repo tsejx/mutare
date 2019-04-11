@@ -8,13 +8,6 @@
  * union([1, 2, 3], [4, 5])
  * // => [1, 2, 3, 4, 5]
  */
-function union(a, b) {
+export function union(a, b) {
     return [...new Set([...a, ...b])];
 }
-
-// ES7+
-function unionES7(a, b) {
-    return a.concat(b.filter(v => !a.includes(v)));
-}
-
-export { union, unionES7 };
