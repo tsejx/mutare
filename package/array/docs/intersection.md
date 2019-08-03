@@ -4,7 +4,7 @@
 
 **ES7+**
 ```js
-function intersectionES7(a, b) {
+function intersection(a, b) {
     return a.filter(v => b.includes(v));
 }
 ```

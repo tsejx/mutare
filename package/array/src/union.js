@@ -8,6 +8,8 @@
  * union([1, 2, 3], [4, 5])
  * // => [1, 2, 3, 4, 5]
  */
-export function union(a, b) {
-  return [...new Set([...a, ...b])];
+function union(a, b) {
+    return [...new Set([...a, ...b])];
 }
+
+export default union

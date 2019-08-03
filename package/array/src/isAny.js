@@ -4,6 +4,6 @@
  * @param {function} fn 检测器
  */
 function isAny(arr, fn = Boolean) {
-  return arr.some(fn);
+    return arr.some(fn);
 }
 export default isAny;

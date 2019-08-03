@@ -8,6 +8,8 @@
  * intersection([1, 2, 3, 4, 5], [2, 4])
  * // => [2, 4]
  */
-export function intersection(a, b) {
+function intersection(a, b) {
   return [...new Set(a.filter(x => new Set(b).has(x)))];
 }
+
+export default intersection

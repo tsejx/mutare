@@ -10,6 +10,8 @@
  * dedupe([undefined, '', , ,null])
  * // => [undefined, '', null]
  */
-export function dedupe(arr) {
-  return [...new Set(arr)];
+function dedupe(arr) {
+    return [...new Set(arr)];
 }
+
+export default dedupe;

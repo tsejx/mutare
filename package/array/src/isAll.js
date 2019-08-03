@@ -5,7 +5,7 @@
  */
 
 function isAll(arr, fn = Boolean) {
-  return arr.every(fn);
+    return arr.every(fn);
 }
 
 export default isAll;

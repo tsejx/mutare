@@ -11,6 +11,8 @@
  * difference([NaN, undefined, '', null], [NaN, '', ,])
  * // => [null]
  */
-export function difference(a, b) {
-  return [...new Set(a.filter(x => !new Set(b).has(x)))];
+function difference(a, b) {
+    return [...new Set(a.filter(x => !new Set(b).has(x)))];
 }
+
+export default difference
