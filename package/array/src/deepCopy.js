@@ -1,4 +1,4 @@
-export function deepCopy(arr) {
+export default function deepCopy(arr) {
     var temp;
     if (typeof arr === 'number' || typeof arr === 'boolean' || typeof arr === 'string') {
         return arr;
