@@ -7,7 +7,7 @@ export * from './src/isDef';
 export * from './src/isEmptyArray';
 export * from './src/isEmptyObject';
 export * from './src/isError';
-export * from './src/isTrue'
+export * from './src/isTrue';
 export * from './src/isFalse';
 export * from './src/isFunction';
 export * from './src/isHtmlElement';
@@ -21,5 +21,4 @@ export * from './src/isPositiveDecimal';
 export * from './src/isPrmitive';
 export * from './src/isString';
 export * from './src/isSymbol';
-export * from './'
 export * from './src/isUndefined';
