@@ -1,12 +1,7 @@
 /**
  * Check if value is primitive
- * @param {*} value
+ * @param {*} v
  */
-export function isPrimitive(value) {
-    return (
-        typeof value === 'string' ||
-        typeof value === 'number' ||
-        typeof value === 'symbol' ||
-        typeof value === 'boolean'
-    );
+export function isPrimitive(v) {
+    return v === null || typeof v !== 'object' && typeof v !== 'function'
 }
