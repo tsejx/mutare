@@ -59,7 +59,7 @@ $ yarn add mutare
     * `cssTransform`
     * `html` - 获取或设置一个 DOM 的 innerHtml
     * `selector` - DOM 元素选择器
-    * `val`
+    * `value`
     * `getElementWidth` - 获取元素宽度
 * Function
     * `argToArray`
@@ -111,3 +111,5 @@ $ yarn add mutare
     * `isNegativeDecimal` - 用于判断是否为负数值并且含有浮点数
     * `isPositiveDecimal` - 用于判断是否为正数值并且含有浮点数
     * `isIdentityCodeValid` - 用于判断身份证合法性
+
+isBrowser

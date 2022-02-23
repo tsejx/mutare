@@ -22,7 +22,7 @@ function dedupeMap(a) {
 ```
 
 **使用 `filter()` 方法实现**
-```ks
+```js
 function dedupeFilter(a) {
     let b = [];
     return a.filter(i => (b.includes(i) ? '' : b.push(i)));
