@@ -1,8 +1,8 @@
 /**
- * Null类型检测函数
- * @param {*} v 检测对象
- * @returns {boolean} 如果检测对象是null类型则返回true，否则返回false
+ * 检测给定值是否为 null。
+ * @param value - 要检查的值。
+ * @returns 如果值是 null，则为 true；否则为 false。
  */
-export function isNull(v) {
-  return v === null;
+export function isNull(value: any): value is null {
+  return value === null;
 }

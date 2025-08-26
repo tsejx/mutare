@@ -1,8 +1,8 @@
 /**
- * Number类型检测函数（仅适用于字面量）
- * @param {*} v 检测对象
- * @returns {boolean} 如果检测对象是number类型则返回true，否则返回false
+ * 检测给定值是否为 number。
+ * @param value - 要检查的值。
+ * @returns 如果值是 number，则为 true；否则为 false。
  */
-export function isNumber(v) {
-  return typeof v === 'number';
+export function isNumber(value: any): value is number {
+  return typeof value === 'number';
 }

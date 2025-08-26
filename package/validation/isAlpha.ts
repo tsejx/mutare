@@ -1,6 +1,6 @@
 /**
  * 是否只包含字母
- * @param  {any} value
+ * @param  value - 要检查的值。
  * @return
  */
 export function isAlpha(value) {

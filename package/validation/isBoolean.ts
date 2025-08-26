@@ -1,8 +1,8 @@
 /**
- * Boolean类型检测函数（仅适用于字面量）
- * @param {*} v 检测对象
- * @returns {boolean} 如果检测对象是boolean类型则返回true，否则返回false
+ * 检测给定值是否为布尔值。
+ * @param value - 要检查的值。
+ * @returns 如果值是布尔值，则为 true；否则为 false。
  */
-export function isBoolean(v) {
-  return typeof v === 'boolean';
+export function isBoolean(value: any): value is boolean {
+  return typeof value === 'boolean';
 }

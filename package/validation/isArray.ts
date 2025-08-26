@@ -1,8 +1,8 @@
 /**
- * Array类型检测函数（推荐，使用数组对象的原生方法判断）
- * @param {*} value 检测对象
- * @returns {boolean} 如果检测对象是数组则返回true，否则返回false
+ * 检测给定值是否为数组。
+ * @param value - 要检查的值。
+ * @returns 如果值是数组，则为 true；否则为 false。
  */
-export function isArray(value) {
+export function isArray(value: any): value is any[] {
   return Array.isArray(value);
 }

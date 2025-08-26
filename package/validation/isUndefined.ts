@@ -1,8 +1,8 @@
 /**
- * Undefined类型检测函数
- * @param {*} v 检测对象
- * @returns {boolean} 如果检测对象是undefined类型则返回true，否则返回false
+ * 检测给定值是否为 undefined。
+ * @param value - 要检查的值。
+ * @returns 如果值是 undefined，则为 true；否则为 false。
  */
-export function isUndefined(v) {
-  return v === undefined;
+export function isUndefined(value: any): value is undefined {
+  return value === undefined;
 }

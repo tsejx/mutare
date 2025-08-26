@@ -1,7 +1,5 @@
 /**
- * Symbol类型检测函数
- * @param {*} v 检测对象
- * @returns {boolean} 如果检测对象是symbol类型则返回true，否则返回false
+ * 检测给定值是否为 Symbol 类型
  */
 export function isSymbol (value) {
   return typeof value === 'symbol'

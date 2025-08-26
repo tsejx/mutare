@@ -1,8 +1,8 @@
 /**
- * Function类型检测函数
- * @param {*} v 检测对象
- * @returns {boolean} 如果检测对象是函数则返回true，否则返回false
+ * 检测给定值是否为函数。
+ * @param value - 要检查的值。
+ * @returns 如果值是函数，则为 true；否则为 false。
  */
-export function isFunction(v) {
-  return typeof v === 'function';
+export function isFunction(value: any): value is Function {
+  return typeof value === 'function';
 }

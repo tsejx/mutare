@@ -1,7 +1,5 @@
 /**
- * 用于判断是否纯对象
- * @param {any} obj The object to inspect.
- * @returns {boolean} True if the argument appears to be a plain object.
+ * 检测是否为纯对象
  */
 export function isPlainObject(obj) {
   if (typeof obj !== 'object' || obj === null) return false;
